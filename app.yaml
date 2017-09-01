@@ -1,0 +1,15 @@
+# This is an empty GAE app, serving as a placeholder as it isn't
+# possible to delete a GAE app without deleting the enclosing GCP
+# project, and that project may contain other resources (such as GCE
+# instances, DNS config, or even just a really well-chosen name) that
+# we don't want to delete.
+
+application: gcp-project-name-goes-here
+version: not-in-use-see-app-yaml
+runtime: python27
+api_version: 1
+threadsafe: false
+
+handlers:
+- url: /
+  script: blank.app
